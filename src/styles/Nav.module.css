@@ -1,0 +1,182 @@
+.navContainer {
+    height: var(--nav-height);
+    width: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--padding-block-medium);
+    padding-inline: var(--padding-inline-xlarge);
+    background: rgb(255, 69, 0);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 69, 0, 1) 41%,
+        rgba(255, 168, 0, 1) 100%
+    );
+}
+
+.navLogoContainer {
+    height: 90%;
+    aspect-ratio: 883/187;
+}
+
+.navLogo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-medium);
+    /*remove bullet points*/
+    list-style-type: none;
+}
+
+.listContainer li {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: var(--font-size-large);
+}
+
+.hamburgerMenuIcon {
+    display: none;
+}
+
+.dropDownContainer {
+    display: flex;
+    position: absolute;
+    top: var(--nav-height);
+    right: -100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+
+    flex-direction: column;
+    gap: var(--gap-medium);
+    padding-block-start: var(--padding-block-small);
+    padding-block-end: var(--padding-block-large);
+    padding-inline: var(--padding-inline-large);
+
+    z-index: 1;
+    background: rgb(255, 69, 0);
+}
+
+.dropDownListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--gap-medium);
+    /*remove bullet points*/
+    list-style-type: none;
+}
+
+.dropDownListContainer li {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: var(--font-size-large);
+}
+
+.dropDownContainerActive {
+    animation: slide-left 0.5s ease-in-out forwards;
+}
+
+.dropDownContainerInactive {
+    animation: slide-right 0.5s ease-in-out forwards;
+}
+
+.loseGradient {
+    animation: lose-gradient 0.1s ease-in-out forwards;
+}
+
+.gainGradient {
+    animation: gain-gradient 0.1s ease-in-out forwards;
+}
+
+@media (max-width: 820px) {
+    .navContainer {
+        padding-inline: var(--padding-inline-large);
+    }
+
+    .listContainer li {
+        font-size: var(--font-size-medium);
+    }
+}
+
+@media (max-width: 730px) {
+    .listContainer li {
+        font-size: var(--font-size-small);
+    }
+}
+
+@media (max-width: 620px) {
+    .listContainer {
+        display: none;
+    }
+
+    .hamburgerMenuIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: var(--font-size-xlarge);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        padding-block: 2px;
+        padding-inline: var(--padding-inline-small);
+    }
+
+    .hamburgerMenuIcon:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -100%;
+    }
+}
+
+@keyframes lose-gradient {
+    0% {
+        background: rgb(255, 69, 0);
+        background: linear-gradient(
+            90deg,
+            rgba(255, 69, 0, 1) 41%,
+            rgba(255, 168, 0, 1) 100%
+        );
+    }
+
+    100% {
+        background: rgb(255, 69, 0);
+    }
+}
+
+@keyframes gain-gradient {
+    0% {
+        background: rgb(255, 69, 0);
+    }
+
+    100% {
+        background: rgb(255, 69, 0);
+        background: linear-gradient(
+            90deg,
+            rgba(255, 69, 0, 1) 41%,
+            rgba(255, 168, 0, 1) 100%
+        );
+    }
+}
