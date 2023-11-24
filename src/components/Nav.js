@@ -27,6 +27,15 @@ const Nav = () => {
             navBar.classList.add(styles.loseGradient);
         }
     };
+
+    const scrollIntoView = (id) => {
+        const element = document.getElementById(id);
+        element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest",
+        });
+    };
     return (
         <nav className={styles.navContainer}>
             <section className={styles.navLogoContainer}>
@@ -43,19 +52,49 @@ const Nav = () => {
                     <a href="/">Inicio</a>
                 </li>
                 <li>
-                    <a href="/">Acerca de</a>
+                    <button
+                        onClick={() => {
+                            scrollIntoView("about");
+                        }}
+                    >
+                        Acerca de
+                    </button>
                 </li>
                 <li>
-                    <a href="/">Servicios</a>
+                    <button
+                        onClick={() => {
+                            scrollIntoView("services");
+                        }}
+                    >
+                        Servicios
+                    </button>
                 </li>
                 <li>
-                    <a href="/">Información</a>
+                    <button
+                        onClick={() => {
+                            scrollIntoView("info");
+                        }}
+                    >
+                        Información
+                    </button>
                 </li>
                 <li>
-                    <a href="/">Equipo</a>
+                    <button
+                        onClick={() => {
+                            scrollIntoView("action");
+                        }}
+                    >
+                        Equipo
+                    </button>
                 </li>
                 <li>
-                    <a href="/">Contacto</a>
+                    <button
+                        onClick={() => {
+                            scrollIntoView("contact");
+                        }}
+                    >
+                        Contacto
+                    </button>
                 </li>
             </ul>
             <section
@@ -70,19 +109,49 @@ const Nav = () => {
                         <a href="/">Inicio</a>
                     </li>
                     <li>
-                        <a href="/">Acerca de</a>
+                        <button
+                            onClick={() => {
+                                scrollIntoView("about");
+                            }}
+                        >
+                            Acerca de
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Servicios</a>
+                        <button
+                            onClick={() => {
+                                scrollIntoView("services");
+                            }}
+                        >
+                            Servicios
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Información</a>
+                        <button
+                            onClick={() => {
+                                scrollIntoView("info");
+                            }}
+                        >
+                            Información
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Equipo</a>
+                        <button
+                            onClick={() => {
+                                scrollIntoView("action");
+                            }}
+                        >
+                            Equipo
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Contacto</a>
+                        <button
+                            onClick={() => {
+                                scrollIntoView("contact");
+                            }}
+                        >
+                            Contacto
+                        </button>
                     </li>
                 </ul>
             </section>

@@ -36,9 +36,13 @@
     list-style-type: none;
 }
 
-.listContainer li {
+.listContainer li button,
+.listContainer li a {
+    background-color: transparent;
+    border: none;
     color: rgba(255, 255, 255, 0.75);
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
 }
 
 .hamburgerMenuIcon {
@@ -73,9 +77,13 @@
     list-style-type: none;
 }
 
-.dropDownListContainer li {
+.dropDownListContainer li button,
+.dropDownListContainer li a {
+    background-color: transparent;
+    border: none;
     color: rgba(255, 255, 255, 0.75);
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
 }
 
 .dropDownContainerActive {
@@ -110,7 +118,7 @@
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 670px) {
     .listContainer {
         display: none;
     }

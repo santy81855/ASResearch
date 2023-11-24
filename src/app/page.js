@@ -28,7 +28,7 @@ export default function Home() {
                 </div>
                 <button className={styles.actionButton}>APRENDER</button>
             </section>
-            <section className={styles.aboutSection}>
+            <section className={styles.aboutSection} id="about">
                 <div className={styles.aboutImageContainer}>
                     <Image
                         src="/images/home/logo150c.png"
@@ -48,7 +48,7 @@ export default function Home() {
                     sed diam nonummy.
                 </p>
             </section>
-            <section className={styles.servicesSection}>
+            <section className={styles.servicesSection} id="services">
                 <p className={styles.servicesTitle}>- SERVICIOS -</p>
                 <p className={styles.servicesText}>¿Con qué trabajamos?</p>
                 <div className={styles.cardContainer}>
@@ -81,7 +81,10 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className={`${styles.infoSection} ${styles.grey}`}>
+            <section
+                className={`${styles.infoSection} ${styles.grey}`}
+                id="info"
+            >
                 <div className={styles.rowContainer}>
                     <div className={styles.infoImageContainer}>
                         <Image
@@ -159,7 +162,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className={styles.actionSection}>
+            <section className={styles.actionSection} id="action">
                 <div className={styles.actionContainer}>
                     <p className={styles.title}>
                         ¿Te interesa lo que has visto?
@@ -221,7 +224,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className={styles.contactSection}>
+            <section className={styles.contactSection} id="contact">
                 <div className={styles.contactCard}>
                     <p className={styles.title}>Envía un mensaje</p>
                     <p className={styles.text}>
@@ -263,6 +266,32 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <section className={styles.contactInfoSection} id="contactInfo">
+                <p className={styles.title}>Contáctanos</p>
+                <p className={styles.text}>
+                    ¿Tienes dudas o quieres saber más? No dudes en contactarnos
+                </p>
+                <p className={styles.contactInfo}>
+                    <i className={`fas fa-map-marker-alt ${styles.icon}`}></i>
+                    <p>Dirección: Calle No.1 Oficina 333 Medellín.</p>
+                </p>
+                <p className={styles.contactInfo}>
+                    <i className={`fas fa-mobile-alt ${styles.icon}`}></i>
+                    <p>Teléfono: 333 333 333</p>
+                </p>
+                <p className={styles.contactInfo}>
+                    <i className={`fas fa-envelope ${styles.icon}`}></i>
+                    <p>email@gmail.com</p>
+                </p>
+            </section>
+            <footer className={styles.footer}>
+                <p className={styles.text}>© 2023 AS Research</p>
+                <div className={styles.socialContainer}>
+                    <i className={`fab fa-facebook-f ${styles.icon}`}></i>
+                    <i className={`fab fa-instagram ${styles.icon}`}></i>
+                    <i className={`fab fa-twitter ${styles.icon}`}></i>
+                </div>
+            </footer>
         </main>
     );
 }
