@@ -58,7 +58,7 @@
     padding-block-end: var(--padding-block-large);
     padding-inline: var(--padding-inline-large);
     z-index: 1;
-    background: rgb(255, 69, 0);
+    background: rgb(70, 70, 70);
 }
 
 .dropDownListContainer {
