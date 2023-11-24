@@ -102,7 +102,7 @@ background: rgb(255, 69, 0);
 }
 
 .actionButton {
-    width: 150px;
+    min-width: 150px;
     padding-block: var(--padding-block-medium);
     padding-inline: var(--padding-inline-large);
     border-radius: 25px;
@@ -270,6 +270,319 @@ background: rgb(255, 69, 0);
     color: white;
 }
 
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grey {
+    background-color: rgb(240, 240, 240);
+}
+
+.infoSection .rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-large);
+    padding-block: var(--padding-block-large);
+    padding-inline: var(--padding-inline-large);
+    max-width: var(--max-width);
+}
+
+.infoImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    width: 50%;
+    min-width: 150px;
+    aspect-ratio: 1/1;
+}
+
+.infoImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.infoSection .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--gap-medium);
+    letter-spacing: 0.1ch;
+    width: 50%;
+}
+
+.infoSection .textContainer .title {
+    font-size: var(--font-size-x2large);
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 69, 0);
+}
+
+.infoSection .textContainer .text {
+    font-size: var(--font-size-medium);
+}
+
+.actionSection {
+    background-image: linear-gradient(
+        135deg,
+        hsl(16deg 100% 50%) 0%,
+        hsl(16deg 100% 50%) 7%,
+        hsl(16deg 100% 50%) 13%,
+        hsl(16deg 100% 50%) 18%,
+        hsl(16deg 100% 50%) 22%,
+        hsl(16deg 100% 50%) 26%,
+        hsl(16deg 100% 50%) 30%,
+        hsl(16deg 100% 50%) 33%,
+        hsl(18deg 100% 50%) 36%,
+        hsl(22deg 100% 50%) 39%,
+        hsl(26deg 100% 50%) 42%,
+        hsl(29deg 100% 50%) 45%,
+        hsl(32deg 100% 50%) 47%,
+        hsl(34deg 100% 50%) 49%,
+        hsl(37deg 100% 50%) 52%,
+        hsl(39deg 100% 50%) 54%,
+        hsl(38deg 100% 51%) 57%,
+        hsl(37deg 100% 52%) 59%,
+        hsl(35deg 99% 52%) 62%,
+        hsl(34deg 99% 53%) 65%,
+        hsl(32deg 99% 53%) 68%,
+        hsl(31deg 99% 53%) 72%,
+        hsl(29deg 99% 53%) 78%,
+        hsl(27deg 98% 54%) 91%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.actionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-large);
+    padding-block: var(--padding-block-xlarge);
+    padding-inline: var(--padding-inline-x2large);
+    max-width: var(--max-width);
+}
+
+.actionContainer .title {
+    font-size: var(--font-size-x2large);
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.actionContainer .text {
+    font-size: var(--font-size-medium);
+    text-align: center;
+    max-width: 60ch;
+    color: white;
+}
+
+.workSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-block: var(--padding-block-xlarge);
+    gap: var(--gap-medium);
+}
+
+.workSection .title {
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    text-align: center;
+}
+
+.workSection .text {
+    font-size: var(--font-size-x2large);
+    text-align: center;
+    color: rgb(255, 69, 0);
+}
+
+.actionCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-large);
+    padding-block: var(--padding-block-large);
+    padding-inline: var(--padding-inline-large);
+    max-width: var(--max-width);
+    flex-wrap: wrap;
+}
+
+.actionCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-large);
+    padding-block: var(--padding-block-large);
+    padding-inline: var(--padding-inline-large);
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    max-width: 300px;
+    min-width: 150px;
+}
+
+.actionCard .titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+}
+
+.actionCard .titleContainer .titleIcon {
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 69, 0);
+}
+
+.actionCard .body {
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+
+.contactSection {
+    background-image: linear-gradient(
+        135deg,
+        hsl(16deg 100% 50%) 0%,
+        hsl(16deg 100% 50%) 7%,
+        hsl(16deg 100% 50%) 13%,
+        hsl(16deg 100% 50%) 18%,
+        hsl(16deg 100% 50%) 22%,
+        hsl(16deg 100% 50%) 26%,
+        hsl(16deg 100% 50%) 30%,
+        hsl(16deg 100% 50%) 33%,
+        hsl(18deg 100% 50%) 36%,
+        hsl(22deg 100% 50%) 39%,
+        hsl(26deg 100% 50%) 42%,
+        hsl(29deg 100% 50%) 45%,
+        hsl(32deg 100% 50%) 47%,
+        hsl(34deg 100% 50%) 49%,
+        hsl(37deg 100% 50%) 52%,
+        hsl(39deg 100% 50%) 54%,
+        hsl(38deg 100% 51%) 57%,
+        hsl(37deg 100% 52%) 59%,
+        hsl(35deg 99% 52%) 62%,
+        hsl(34deg 99% 53%) 65%,
+        hsl(32deg 99% 53%) 68%,
+        hsl(31deg 99% 53%) 72%,
+        hsl(29deg 99% 53%) 78%,
+        hsl(27deg 98% 54%) 91%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-block: var(--padding-block-xlarge);
+    padding-inline: var(--padding-inline-x2large);
+}
+
+.contactCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-large);
+    padding-block: var(--padding-block-large);
+    padding-inline: var(--padding-inline-large);
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    max-width: 800px;
+    width: 100%;
+    min-width: 320px;
+    border-radius: var(--border-radius);
+}
+
+.contactCard .title {
+    font-size: var(--font-size-x2large);
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 69, 0);
+}
+
+.contactCard .text {
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+
+.contactCard .inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-small);
+    max-width: 600px;
+    width: 100%;
+}
+
+.contactCard .inputContainer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-small);
+    width: 100%;
+}
+
+.contactCard .inputContainer .row .input {
+    width: 50%;
+    padding-block: var(--padding-block-small);
+    padding-inline: var(--padding-inline-small);
+}
+
+.contactCard .inputContainer .textarea {
+    width: 100%;
+    height: 200px;
+    padding-block: var(--padding-block-small);
+    padding-inline: var(--padding-inline-small);
+    resize: none;
+}
+
+.contactCard .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-small);
+    width: 100%;
+}
+
+.contactCard .buttonContainer button {
+    padding-block: var(--padding-block-small);
+    padding-inline: var(--padding-inline-small);
+    border-radius: var(--border-radius);
+    border: 1px solid rgb(255, 69, 0);
+    font-size: var(--font-size-medium);
+    background-color: white;
+    width: 120px;
+    color: rgb(255, 69, 0);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.contactCard .buttonContainer button:hover {
+    background-color: rgb(255, 69, 0);
+    color: white;
+}
+
 @media (max-width: 730px) {
     .heroImageContainer {
         display: none;
@@ -282,6 +595,22 @@ background: rgb(255, 69, 0);
     .heroSection .titleSection {
         text-align: center;
         gap: var(--gap-large);
+    }
+}
+
+@media (max-width: 670px) {
+    .infoSection .rowContainer {
+        flex-direction: column;
+    }
+
+    .infoSection .textContainer {
+        width: 100%;
+        align-items: center;
+    }
+
+    .infoImageContainer {
+        width: 250px;
+        height: 250px;
     }
 }
 

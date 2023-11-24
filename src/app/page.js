@@ -81,6 +81,188 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <section className={`${styles.infoSection} ${styles.grey}`}>
+                <div className={styles.rowContainer}>
+                    <div className={styles.infoImageContainer}>
+                        <Image
+                            src="/images/home/machineLearning.png"
+                            alt="Machine Learning Image"
+                            width={500}
+                            height={500}
+                            className={styles.infoImage}
+                        />
+                    </div>
+                    <div className={styles.textContainer}>
+                        <p className={styles.title}>Machine Learning</p>
+                        <p className={styles.text}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In euismod rutrum justo nec euismod. Nunc
+                            congue nibh et lorem rhoncus pharetra. Sed venenatis
+                            turpis at purus pharetra, vitae elementum nunc
+                            condimentum. Vivamus nunc massa, dictum quis diam
+                            non, dapibus aliquam ante. Nunc vitae hendrerit
+                            purus. Nulla facilisi. Morbi a placerat est, ut
+                            mattis libero.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className={styles.infoSection}>
+                <div className={styles.rowContainer}>
+                    <div className={styles.textContainer}>
+                        <p className={styles.title}>Big Data</p>
+                        <p className={styles.text}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In euismod rutrum justo nec euismod. Nunc
+                            congue nibh et lorem rhoncus pharetra. Sed venenatis
+                            turpis at purus pharetra, vitae elementum nunc
+                            condimentum. Vivamus nunc massa, dictum quis diam
+                            non, dapibus aliquam ante. Nunc vitae hendrerit
+                            purus. Nulla facilisi. Morbi a placerat est, ut
+                            mattis libero.
+                        </p>
+                    </div>
+                    <div className={styles.infoImageContainer}>
+                        <Image
+                            src="/images/home/BigData.png"
+                            alt="Big Data Image"
+                            width={500}
+                            height={500}
+                            className={styles.infoImage}
+                        />
+                    </div>
+                </div>
+            </section>
+            <section className={`${styles.infoSection} ${styles.grey}`}>
+                <div className={styles.rowContainer}>
+                    <div className={styles.infoImageContainer}>
+                        <Image
+                            src="/images/home/dataMining.png"
+                            alt="Data Mining Image"
+                            width={500}
+                            height={500}
+                            className={styles.infoImage}
+                        />
+                    </div>
+                    <div className={styles.textContainer}>
+                        <p className={styles.title}>Data Mining</p>
+                        <p className={styles.text}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In euismod rutrum justo nec euismod. Nunc
+                            congue nibh et lorem rhoncus pharetra. Sed venenatis
+                            turpis at purus pharetra, vitae elementum nunc
+                            condimentum. Vivamus nunc massa, dictum quis diam
+                            non, dapibus aliquam ante. Nunc vitae hendrerit
+                            purus. Nulla facilisi. Morbi a placerat est, ut
+                            mattis libero.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className={styles.actionSection}>
+                <div className={styles.actionContainer}>
+                    <p className={styles.title}>
+                        ¿Te interesa lo que has visto?
+                    </p>
+                    <p className={styles.text}>
+                        Asesórate con expertos en las tecnologías que están
+                        revolucionando la industria. Asesórate con los mejores y
+                        no dudes en contactarnos.
+                    </p>
+                    <button className={styles.actionButton}>CONTÁCTANOS</button>
+                </div>
+            </section>
+            <section className={`${styles.workSection} ${styles.grey}`}>
+                <p className={styles.title}>- ACERCA DE NOSOTROS -</p>
+                <p className={styles.text}>¿Cómo trabajamos?</p>
+                <div className={styles.actionCardContainer}>
+                    <div className={styles.actionCard}>
+                        <div className={styles.titleContainer}>
+                            <i
+                                className={`fas fa-vials ${styles.titleIcon}`}
+                            ></i>
+                            <p className={styles.titleIcon}>Experiencia</p>
+                        </div>
+                        <p className={styles.body}>
+                            This is a longer card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                        </p>
+                    </div>
+                    <div className={styles.actionCard}>
+                        <div className={styles.titleContainer}>
+                            <i
+                                className={`far fa-id-card ${styles.titleIcon}`}
+                            ></i>
+                            <p className={styles.titleIcon}>
+                                Servicio Profesional
+                            </p>
+                        </div>
+                        <p className={styles.body}>
+                            This is a longer card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                        </p>
+                    </div>
+                    <div className={styles.actionCard}>
+                        <div className={styles.titleContainer}>
+                            <i
+                                className={`fas fa-question-circle ${styles.titleIcon}`}
+                            ></i>
+                            <p className={styles.titleIcon}>
+                                Soporte Permanente
+                            </p>
+                        </div>
+                        <p className={styles.body}>
+                            This is a longer card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className={styles.contactSection}>
+                <div className={styles.contactCard}>
+                    <p className={styles.title}>Envía un mensaje</p>
+                    <p className={styles.text}>
+                        Déjanos un mensaje, nos pondremos en contacto contigo.
+                    </p>
+                    <div className={styles.inputContainer}>
+                        <div className={styles.row}>
+                            <input
+                                type="text"
+                                placeholder="Nombre"
+                                className={styles.input}
+                            />
+                            <input
+                                type="text"
+                                placeholder="Telefono"
+                                className={styles.input}
+                            />
+                        </div>
+                        <div className={styles.row}>
+                            <input
+                                type="text"
+                                placeholder="Asunto"
+                                className={styles.input}
+                            />
+                            <input
+                                type="text"
+                                placeholder="Correo"
+                                className={styles.input}
+                            />
+                        </div>
+                        <textarea
+                            placeholder="Mensaje"
+                            className={styles.textarea}
+                        />
+                        <div className={styles.buttonContainer}>
+                            <button className={styles.button}>Cancelar</button>
+                            <button className={styles.button}>Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }
