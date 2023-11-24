@@ -8,12 +8,7 @@
     align-items: center;
     padding-block: var(--padding-block-medium);
     padding-inline: var(--padding-inline-xlarge);
-    background: rgb(255, 69, 0);
-    background: linear-gradient(
-        90deg,
-        rgba(255, 69, 0, 1) 41%,
-        rgba(255, 168, 0, 1) 100%
-    );
+    background-color: rgb(70, 70, 70);
 }
 
 .navLogoContainer {
