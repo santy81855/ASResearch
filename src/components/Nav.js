@@ -13,18 +13,12 @@ const Nav = () => {
         const navBar = document.querySelector(`.${styles.navContainer}`);
         if (dropDownActive) {
             setDropDownActive(false);
-            dropDownContainer.classList.remove(styles.dropDownContainerActive);
-            dropDownContainer.classList.add(styles.dropDownContainerInactive);
-            navBar.classList.remove(styles.loseGradient);
-            navBar.classList.add(styles.gainGradient);
+            dropDownContainer.classList.remove(styles.openMenu);
+            dropDownContainer.classList.add(styles.closeMenu);
         } else {
             setDropDownActive(true);
-            dropDownContainer.classList.remove(
-                styles.dropDownContainerInactive
-            );
-            dropDownContainer.classList.add(styles.dropDownContainerActive);
-            navBar.classList.remove(styles.gainGradient);
-            navBar.classList.add(styles.loseGradient);
+            dropDownContainer.classList.remove(styles.closeMenu);
+            dropDownContainer.classList.add(styles.openMenu);
         }
     };
 

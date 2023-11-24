@@ -46,18 +46,17 @@
 
 .dropDownContainer {
     display: flex;
-    position: absolute;
+    position: fixed;
     top: var(--nav-height);
-    right: -100%;
+    right: -100vw;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.75);
-
+    transition: transform 0.5s ease-in-out;
     flex-direction: column;
     gap: var(--gap-medium);
     padding-block-start: var(--padding-block-small);
     padding-block-end: var(--padding-block-large);
     padding-inline: var(--padding-inline-large);
-
     z-index: 1;
     background: rgb(255, 69, 0);
 }
@@ -89,12 +88,38 @@
     animation: slide-right 0.5s ease-in-out forwards;
 }
 
-.loseGradient {
-    animation: lose-gradient 0.1s ease-in-out forwards;
+.openMenu {
+    animation-name: openMenuAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
 }
 
-.gainGradient {
-    animation: gain-gradient 0.1s ease-in-out forwards;
+.closeMenu {
+    animation-name: closeMenuAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes openMenuAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes closeMenuAnimation {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @media (max-width: 820px) {
@@ -151,35 +176,5 @@
     }
     100% {
         right: -100%;
-    }
-}
-
-@keyframes lose-gradient {
-    0% {
-        background: rgb(255, 69, 0);
-        background: linear-gradient(
-            90deg,
-            rgba(255, 69, 0, 1) 41%,
-            rgba(255, 168, 0, 1) 100%
-        );
-    }
-
-    100% {
-        background: rgb(255, 69, 0);
-    }
-}
-
-@keyframes gain-gradient {
-    0% {
-        background: rgb(255, 69, 0);
-    }
-
-    100% {
-        background: rgb(255, 69, 0);
-        background: linear-gradient(
-            90deg,
-            rgba(255, 69, 0, 1) 41%,
-            rgba(255, 168, 0, 1) 100%
-        );
     }
 }
